@@ -1,8 +1,8 @@
-# Your Name Here
+# Calvin Rasmussen
 # UWYO COSC 1010
-# Submission Date
+# 10/06/2024
 # Lab 03 
-# Lab Section: 
+# Lab Section: 12
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -99,7 +99,17 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+lists=[max_temps,min_temps]
+ave_temps=[]
+for list in lists:
+    ave_temp=sum(list)/len(list)
+    ave_temps.append(ave_temp)
+print(f"{ave_temps[0]} is the average high temperature")
+print(f"{ave_temps[1]} is the average low temperature")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-
+high=max(max_temps)
+print(f"{high} is the highest recorded temperature")
+low=min(min_temps)
+print(f"{low} is the lowest recorded temperature")
